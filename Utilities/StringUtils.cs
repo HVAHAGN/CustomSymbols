@@ -6,6 +6,7 @@ namespace Utilities
 {
     public static class StringUtils
     {
+        [Obsolete("This method will removed in v",true)] //without second parameter will appear as warning 
         public static List<string> ToUpperAndWithLength(List<string> stringsToProcess)
         {
             var results = new List<string>();
