@@ -2,6 +2,7 @@
 //#undef APPENDTIME
 
 using System;
+using System.Diagnostics;
 using System.Reflection;
 
 namespace Utilities
@@ -38,6 +39,7 @@ namespace Utilities
             return result;
         }
 
+        [Conditional("DEBUG")]
         private static void AppendDate(ref string result)
         {
             result += " " + DateTime.Now.ToShortDateString();
