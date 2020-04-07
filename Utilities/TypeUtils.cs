@@ -25,7 +25,8 @@ namespace Utilities
 #elif NET40
             result +=$"{o.GetType().Namespace} (NET40 dll)";
 #else
-            throw new NotSupportedException();
+#warning Framework code missing
+            //throw new NotSupportedException();
 #endif
 
 #if APPENDTIME
